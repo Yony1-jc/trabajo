@@ -1,0 +1,6 @@
+frase = input("Ingrese una frase: ")
+letra = input("Ingrese una letra: ")
+frase_min = frase.lower()
+letra_min = letra.lower()
+contador = frase_min.count(letra_min)
+print(f"La letra '{letra}' aparece {contador} veces en la frase '{frase}'.")
