@@ -1,7 +1,6 @@
-edad = int(input("Ingrese su edad: "))
-ingresos_mensuales = int(input("Ingrese sus ingresos mensuales en soles: "))
-
-if edad >= 18 and ingresos_mensuales >= 2000:
-    print("Usted tiene que pagar impuestos.")
+divisas = {'Soles':'S', 'Dolar':'$', 'Quetzal':'Q', 'Yen':'¥'}
+divisa_usuario = input("Ingrese una divisa: ")
+if divisa_usuario in divisas:
+    print("El símbolo de la divisa", divisa_usuario, "es", divisas[divisa_usuario])
 else:
-    print("Usted no tiene que pagar impuestos.")
+    print("La divisa", divisa_usuario, "no está en el diccionario")
